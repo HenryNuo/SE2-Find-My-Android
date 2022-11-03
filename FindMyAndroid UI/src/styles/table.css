@@ -1,0 +1,49 @@
+th,
+td {
+  color: white;
+}
+
+.tableRow:not(.selectedRow):hover {
+  background-color: rgb(30, 64, 78);
+  cursor: pointer;
+}
+
+.selectedRow {
+  background-color: rgb(42, 89, 109);
+}
+
+.active > .page-link {
+  background-color: rgb(42, 89, 109) !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+.react-bootstrap-table table {
+  table-layout: auto !important;
+}
+
+/* If modal table, set a smaller height */
+.modal-body > .react-bootstrap-table {
+  background-color: rgba(22, 46, 56, 1);
+  height: 50vh;
+  overflow: auto;
+}
+
+.react-bootstrap-table {
+  background-color: rgba(22, 46, 56, 1);
+  height: 80vh;
+  overflow: auto;
+}
+
+th {
+  border-collapse: separate !important;
+  position: sticky;
+  top: 0;
+  background-color: #0b6c96ff;
+}
+
+.buttonRow {
+  margin-top: 20px;
+  position: absolute;
+  /* bottom: -20px; */
+}

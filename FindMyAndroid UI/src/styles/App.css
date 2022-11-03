@@ -1,0 +1,60 @@
+html {
+  background-color: #162e38ff;
+  min-width: 800px;
+}
+
+.App {
+  height: 100vh;
+  min-height: 700px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-image: url("../images/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 800px;
+}
+
+.logoText {
+  color: #18aff0ff;
+}
+
+a {
+  padding-left: 5px !important;
+}
+
+.link {
+  color: #18aff0ff;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: white;
+}
+
+.content {
+  flex: 1;
+  overflow: scroll;
+}
+
+.icon {
+  margin: 5px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+label {
+  color: white;
+}
+
+hr {
+  border-top: 1px solid #495057;
+}
+
+.alert p {
+  color: black !important;
+}

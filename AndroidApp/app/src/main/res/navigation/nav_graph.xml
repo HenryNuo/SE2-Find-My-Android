@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.findmyandroid.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_homeScreen"
+            app:destination="@id/homeScreen"/>
+        <action
+            android:id="@+id/action_login_to_userRegistration"
+            app:destination="@id/userRegistration"/>
+        <action
+            android:id="@+id/action_login_to_forgotPassword"
+            app:destination="@id/ResetPassword"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/userRegistration"
+        android:name="com.example.findmyandroid.UserRegistration"
+        android:label="fragment_user_registration"
+        tools:layout="@layout/fragment_user_registration">
+        <action
+        android:id="@+id/action_userRegstration_to_login"
+        app:destination="@id/loginFragment"/>
+        <action
+            android:id="@+id/action_userRegstration_to_loginScreen"
+            app:destination="@id/loginFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.findmyandroid.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_login"
+            app:destination="@id/loginFragment"/>
+        <action
+            android:id="@+id/action_homeScreen_to_changePassword"
+            app:destination="@id/changePassword"/>
+    </fragment>
+    <fragment
+        android:id="@+id/changePassword"
+        android:name="com.example.findmyandroid.ChangePassword"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" >
+        <action
+            android:id="@+id/action_changePassword_to_home"
+            app:destination="@id/homeScreen"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ResetPassword"
+        android:name="com.example.findmyandroid.ResetPassword"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" >
+        <action
+            android:id="@+id/action_reset_password_to_login"
+            app:destination="@id/loginFragment"/>
+    </fragment>
+</navigation>

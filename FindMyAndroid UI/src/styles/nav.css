@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 700px;
+  width: 15%;
+  background-color: #0b6c96ff;
+}
+
+.nav-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: azure;
+}
+
+.logout {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+
+a {
+  padding: 10px;
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.aLink:hover {
+  background-color: #162e38ff;
+  text-decoration: none;
+}
+
+a > b {
+  font-size: 25px;
+}
+
+.active {
+  background-color: #162e38ff;
+  color: #212529;
+  font-weight: bolder;
+}
